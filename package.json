@@ -1,26 +1,45 @@
 {
   "name": "snippet-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "@hookform/resolvers": "^3.1.1",
+    "@radix-ui/react-slot": "^1.0.2",
+    "autoprefixer": "10.4.14",
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^2.0.0",
+    "contentlayer": "^0.3.4",
+    "dotenv": "^16.3.1",
+    "eslint": "8.55.0",
+    "eslint-config-next": "14.1.0",
+    "lucide-react": "^0.274.0",
+    "next": "14.1.0",
+    "next-auth": "^4.24.7",
+    "next-themes": "^0.3.0",
+    "nodemailer": "^6.9.3",
+    "postcss": "8.4.32",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "schema-dts": "^1.1.2",
+    "tailwind-merge": "^2.0.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^20.8.9",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.3.3"
   }
 }
