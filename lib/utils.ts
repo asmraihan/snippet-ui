@@ -36,10 +36,9 @@ export function formatDate(input: string | number): string {
 export function absoluteUrl(path: string) {
   return `${env.NEXT_PUBLIC_APP_URL}${path}`;
 }
-
 export function constructMetadata({
-  title = "Snippet UI- React, Tailwind CSS, and Framer Motion Components",
-  description = "Snippet is a collection of reusable components for React, Tailwind CSS, and Framer Motion.",
+  title = "Snippet UI",
+  description = "Snippet UI is a Open source, TypeScript ready, Copy and paste library crafted for Design Engineers.",
   image = absoluteUrl("/api/og"),
   ...props
 }: {
@@ -79,11 +78,11 @@ export function constructMetadata({
       creator: "@asmraihan",
     },
     icons: "/favicon.ico",
-    metadataBase: new URL("https://snippet.ui"),
+    metadataBase: new URL("https://snippetui.live"),
     authors: [
       {
         name: "asmraihan",
-        url: "https://twitter.com/asmraihan",
+        url: "https://github.com/asmraihan",
       },
     ],
     creator: "asmraihan",
