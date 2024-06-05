@@ -13,10 +13,10 @@ import {
 import { docsConfig } from "@/config/docs";
 import { cn } from "@/lib/utils";
 import { DialogProps } from "@radix-ui/react-alert-dialog";
-import { Circle, File, Laptop, Moon, SunMedium } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import * as React from "react";
+import { Icons } from "./icons";
 
 export function CommandMenu({ ...props }: DialogProps) {
   const router = useRouter();
@@ -71,7 +71,7 @@ export function CommandMenu({ ...props }: DialogProps) {
                     runCommand(() => router.push(navItem.href as string));
                   }}
                 >
-                  <File className="mr-2 h-4 w-4" />
+                  <Icons.page className="mr-2 h-4 w-4" />
                   {navItem.title}
                 </CommandItem>
               ))}
@@ -87,7 +87,7 @@ export function CommandMenu({ ...props }: DialogProps) {
                   }}
                 >
                   <div className="mr-2 flex h-4 w-4 items-center justify-center">
-                    <Circle className="h-3 w-3" />
+                    <Icons.circle className="h-3 w-3" />
                   </div>
                   {navItem.title}
                 </CommandItem>
@@ -97,15 +97,15 @@ export function CommandMenu({ ...props }: DialogProps) {
           <CommandSeparator />
           <CommandGroup heading="Theme">
             <CommandItem onSelect={() => runCommand(() => setTheme("light"))}>
-              <SunMedium className="mr-2 h-4 w-4" />
+              <Icons.sun className="mr-2 h-4 w-4" />
               Light
             </CommandItem>
             <CommandItem onSelect={() => runCommand(() => setTheme("dark"))}>
-              <Moon className="mr-2 h-4 w-4" />
+              <Icons.moon className="mr-2 h-4 w-4" />
               Dark
             </CommandItem>
             <CommandItem onSelect={() => runCommand(() => setTheme("system"))}>
-              <Laptop className="mr-2 h-4 w-4" />
+              <Icons.laptop className="mr-2 h-4 w-4" />
               System
             </CommandItem>
           </CommandGroup>

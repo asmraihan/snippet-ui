@@ -1,7 +1,7 @@
 "use client";
 
-import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { Icons } from "./icons";
 
 export function SiteBanner() {
   return (
@@ -18,7 +18,7 @@ export function SiteBanner() {
             {" "}
             Snippet is now available! Try it out
           </span>{" "}
-          <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
+          <Icons.chevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
         </Link>
       </div>
       <hr className="absolute bottom-0 m-0 h-px w-full bg-neutral-200/30" />

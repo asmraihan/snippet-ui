@@ -7,7 +7,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { Star } from 'lucide-react';
 import { Badge } from "./ui/badge";
 import { getGithubStars } from "@/lib/fetchers/githubStar";
 
@@ -40,7 +39,7 @@ export async function SiteHeader() {
               className="rounded-md px-3.5 py-1.5"
               variant="secondary"
             >
-              <Icons.gitHub className="mr-2 size-3.5" aria-hidden="true" />
+              <Icons.star className="mr-2 size-3.5" aria-hidden="true" />
               {githubStars} stars on GitHub
             </Badge>
             <span className="sr-only">GitHub</span>

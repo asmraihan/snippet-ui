@@ -17,16 +17,7 @@ const nextConfig = {
   images: {
     domains: ["localhost"],
   },
-  async redirects() {
-    return [
-      {
-        source: "/components/:path*",
-        destination: "/docs/components/:path*",
-        permanent: true,
-      },
-   
-    ];
-  },
+
 };
 
 module.exports = withContentlayer(nextConfig);

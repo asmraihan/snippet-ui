@@ -4,12 +4,8 @@ import { Icons } from "@/components/icons";
 import { docsConfig } from "@/config/docs";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { ExternalLink } from 'lucide-react';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Badge } from "./ui/badge";
-import { Code } from "lucide-react";
-import { CodeIcon } from "@radix-ui/react-icons";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -17,7 +13,7 @@ export function MainNav() {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-10 flex items-center space-x-2">
-        <CodeIcon className="h-6 w-6" />
+        <Icons.logo className="h-6 w-6" />
         <span className="hidden font-bold md:inline-block">
           {siteConfig.name}
         </span>
@@ -36,7 +32,7 @@ export function MainNav() {
             )}
           >
             {item.title}
-            {item.external && <ExternalLink className="ml-2 size-4" />}
+            {item.external && <Icons.externalLink className="ml-2 size-4" />}
           </Link>
         ))}
       </nav>

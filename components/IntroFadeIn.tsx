@@ -34,10 +34,10 @@ export function IntroFadeIn({ githubStars }: { githubStars: number | null }) {
             >
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-muted-foreground ring-1 ring-ring/10 hover:ring-ring/20">
                     Introducing Snippet UI.{" "}
-                    <a href="#" className="font-semibold text-primary">
+                    <Link href="/docs" className="font-semibold text-primary">
                         <span className="absolute inset-0" aria-hidden="true" />
                         Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                 </div>
             </motion.div>
 
@@ -45,11 +45,9 @@ export function IntroFadeIn({ githubStars }: { githubStars: number | null }) {
                 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl"
                 variants={FADE_UP_ANIMATION_VARIANTS}
             >
-                Explore and Craft
+             Effortless design integration  
                 <br />
-                Snippets and Blocks
-                <br />
-                with Ease
+                for developers. 
             </motion.h1>
             <motion.p
                 className="mt-2 text-lg leading-8 text-muted-foreground"
@@ -77,10 +75,14 @@ export function IntroFadeIn({ githubStars }: { githubStars: number | null }) {
                 className="mt-6 flex items-center justify-center gap-x-6"
                 variants={FADE_UP_ANIMATION_VARIANTS}
             >
-                <Button>Get Started</Button>
-                <Button variant="outline">
-                    Learn more&nbsp;<span aria-hidden="true">→</span>
-                </Button>
+                <Link href="/docs/components" passHref>
+                    <Button>Get Started</Button>
+                </Link>
+                <Link href="/docs" passHref>
+                    <Button variant="outline">
+                        Learn more&nbsp;<span aria-hidden="true">→</span>
+                    </Button>
+                </Link>
             </motion.div>
         </motion.div>
     );

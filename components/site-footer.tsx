@@ -23,7 +23,6 @@ export function SiteFooter() {
         <BuildBy /> 
         {/* <span className="sr-only">Twitter</span> */}
       {/* </Link> */}
-      .
     </div>
     <div className="flex items-center space-x-1">
       <Link
