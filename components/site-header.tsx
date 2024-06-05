@@ -9,9 +9,18 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Star } from 'lucide-react';
 import { Badge } from "./ui/badge";
+import { getGithubStars } from "@/lib/fetchers/githubStar";
 
 
 export async function SiteHeader() {
+
+  const githubStarsPromise = getGithubStars()
+
+  const [githubStars] = await Promise.all([
+    githubStarsPromise,
+  ])
+
+
   return (
     <header
       className={cn(
@@ -32,7 +41,7 @@ export async function SiteHeader() {
               variant="secondary"
             >
               <Icons.gitHub className="mr-2 size-3.5" aria-hidden="true" />
-              1000 stars on GitHub
+              {githubStars} stars on GitHub
             </Badge>
             <span className="sr-only">GitHub</span>
           </Link>
