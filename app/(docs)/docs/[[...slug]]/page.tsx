@@ -77,15 +77,12 @@ export async function generateStaticParams(): Promise<
 
 export default async function DocPage({ params }: DocPageProps) {
   const doc = await getDocFromParams({ params });
-  console.log(doc, "doc");
   if (!doc || !doc.published) {
     notFound();
   }
 
   const toc = await getTableOfContents(doc.body.raw);
 
-  console.log(toc, "toc");
-  
   return (
     <main
       className={cn("relative py-6 lg:gap-10 lg:py-8 xl:grid ", {

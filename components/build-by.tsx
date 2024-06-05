@@ -1,16 +1,6 @@
 "use client";
 
 import React from "react";
-
-import {
-    ArrowDownIcon,
-    CalendarIcon,
-    CodeIcon,
-    GitHubLogoIcon,
-    LinkedInLogoIcon,
-    TwitterLogoIcon,
-} from "@radix-ui/react-icons";
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,6 +9,7 @@ import {
     HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import Link from "next/link";
+import { Icons } from "./icons";
 
 export default function BuildBy() {
     return (
@@ -40,7 +31,7 @@ export default function BuildBy() {
                         <h4 className="text-sm font-semibold">Built by Asm Raihan</h4>
                         <p className="text-sm">
                             Check out my other projects{" "}
-                            <ArrowDownIcon className="inline-block h-4 w-4" />
+                            <Icons.arrowDown className="inline-block h-4 w-4" />
                         </p>
                         <div className="flex items-center pt-2 space-x-2">
                             <Link
@@ -49,7 +40,7 @@ export default function BuildBy() {
                                 target="_blank"
                             >
                                 <Button variant="ghost" size="icon">
-                                    <TwitterLogoIcon className="h-4 w-4" />
+                                    <Icons.twitter className="h-4 w-4" />
                                 </Button>
                             </Link>
                             <Link
@@ -58,7 +49,7 @@ export default function BuildBy() {
                                 target="_blank"
                             >
                                 <Button variant="ghost" size="icon">
-                                    <GitHubLogoIcon className="h-4 w-4" />
+                                    <Icons.gitHub className="h-4 w-4" />
                                 </Button>
                             </Link>
                             <Link
@@ -67,7 +58,7 @@ export default function BuildBy() {
                                 target="_blank"
                             >
                                 <Button variant="ghost" size="icon">
-                                    <LinkedInLogoIcon className="h-4 w-4" />
+                                    <Icons.linkedIn className="h-4 w-4" />
                                 </Button>
                             </Link>
                         </div>

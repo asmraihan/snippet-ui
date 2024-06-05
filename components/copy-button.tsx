@@ -3,7 +3,6 @@
 import { DropdownMenuTriggerProps } from "@radix-ui/react-dropdown-menu";
 import * as React from "react";
 // import { NpmCommands } from "types/unist";
-
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,8 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { CheckIcon, CopyIcon } from "@radix-ui/react-icons";
-
 interface CopyButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   value: string;
   src?: string;
@@ -56,9 +53,9 @@ export function CopyButton({
     >
       <span className="sr-only">Copy</span>
       {hasCopied ? (
-        <CheckIcon className="h-3 w-3" />
+        <Icons.check className="h-3 w-3" />
       ) : (
-        <CopyIcon className="h-3 w-3" />
+        <Icons.copy className="h-3 w-3" />
       )}
     </Button>
   );
@@ -121,74 +118,3 @@ export function CopyWithClassNames({
     </DropdownMenu>
   );
 }
-
-// interface CopyNpmCommandButtonProps extends DropdownMenuTriggerProps {
-//   commands: Required<NpmCommands>;
-// }
-
-// export function CopyNpmCommandButton({
-//   commands,
-//   className,
-//   ...props
-// }: CopyNpmCommandButtonProps) {
-//   const [hasCopied, setHasCopied] = React.useState(false);
-
-//   React.useEffect(() => {
-//     setTimeout(() => {
-//       setHasCopied(false);
-//     }, 2000);
-//   }, [hasCopied]);
-
-//   const copyCommand = React.useCallback(
-//     (value: string, pm: "npm" | "pnpm" | "yarn") => {
-//       copyToClipboardWithMeta(value, {
-//         name: "copy_npm_command",
-//         properties: {
-//           command: value,
-//           pm,
-//         },
-//       });
-//       setHasCopied(true);
-//     },
-//     []
-//   );
-
-//   return (
-//     <DropdownMenu>
-//       <DropdownMenuTrigger asChild>
-//         <Button
-//           size="icon"
-//           variant="ghost"
-//           className={cn(
-//             "relative z-10 h-6 w-6 text-zinc-50 hover:bg-zinc-700 hover:text-zinc-50",
-//             className
-//           )}
-//         >
-//           {hasCopied ? (
-//             <Icons.check className="h-3 w-3" />
-//           ) : (
-//             <Icons.copy className="h-3 w-3" />
-//           )}
-//           <span className="sr-only">Copy</span>
-//         </Button>
-//       </DropdownMenuTrigger>
-//       <DropdownMenuContent align="end">
-//         <DropdownMenuItem
-//           onClick={() => copyCommand(commands.__npmCommand__, "npm")}
-//         >
-//           npm
-//         </DropdownMenuItem>
-//         <DropdownMenuItem
-//           onClick={() => copyCommand(commands.__yarnCommand__, "yarn")}
-//         >
-//           yarn
-//         </DropdownMenuItem>
-//         <DropdownMenuItem
-//           onClick={() => copyCommand(commands.__pnpmCommand__, "pnpm")}
-//         >
-//           pnpm
-//         </DropdownMenuItem>
-//       </DropdownMenuContent>
-//     </DropdownMenu>
-//   );
-// }
