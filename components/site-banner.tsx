@@ -5,19 +5,18 @@ import Link from "next/link";
 
 export function SiteBanner() {
   return (
-    <div className="relative top-0 bg-indigo-600 py-3 text-white md:py-0">
+    <div className="relative top-0 bg-emerald-200 py-3 text-black md:py-0">
       <div className="container flex flex-col items-center justify-center gap-4 md:h-12 md:flex-row">
         <Link
-          href="https://pro.magicui.design"
+          href="https://snippet.snippet"
           onClick={() => {console.log("clicked")}}
           target="_blank"
           className="group inline-flex items-center justify-center text-center text-sm leading-loose"
         >
-          ✨
+          🤩
           <span className="font-bold">
             {" "}
-            Introducing Magic UI Pro - 50+ blocks and templates to build
-            beautiful landing pages in minutes.
+            Snippet is now available! Try it out
           </span>{" "}
           <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
         </Link>

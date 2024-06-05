@@ -8,18 +8,19 @@ import { ExternalLink } from 'lucide-react';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Badge } from "./ui/badge";
+import { Code } from "lucide-react";
+import { CodeIcon } from "@radix-ui/react-icons";
 
 export function MainNav() {
   const pathname = usePathname();
 
   return (
     <div className="mr-4 hidden md:flex">
-      <Link href="/" className="mr-6 flex items-center space-x-2">
-        <Icons.logo className="h-6 w-6" />
+      <Link href="/" className="mr-10 flex items-center space-x-2">
+        <CodeIcon className="h-6 w-6" />
         <span className="hidden font-bold md:inline-block">
           {siteConfig.name}
         </span>
-        <Badge variant="secondary">Beta</Badge>
       </Link>
       <nav className="hidden items-center space-x-6 text-sm font-medium xl:flex">
         {docsConfig.mainNav.map((item) => (

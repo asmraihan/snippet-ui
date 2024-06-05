@@ -12,13 +12,8 @@ export const docsConfig: DocsConfig = {
       href: "/components",
     },
     {
-      title: "Roadmap",
+      title: "Community",
       href: "https://snipet-ui.app/roadmap",
-      external: true,
-    },
-    {
-      title: "Discord",
-      href: "https://discord.gg/snipet",
       external: true,
     },
   ],
