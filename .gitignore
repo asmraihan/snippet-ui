@@ -5,12 +5,14 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.contentlayer
 tmp
 # testing
 /coverage
 
 # next.js
 /.next/
+/.contentlayer/
 /out/
 
 # production

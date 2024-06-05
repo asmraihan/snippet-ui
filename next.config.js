@@ -17,7 +17,26 @@ const nextConfig = {
   images: {
     domains: ["localhost"],
   },
-
+  async redirects() {
+    return [
+      {
+        source: "/components",
+        destination: "/docs/components/globe-cobe",
+        permanent: true,
+      },
+      {
+        source: "/docs/components",
+        destination: "/docs/components/globe-cobe",
+        permanent: true,
+      },
+      {
+        source: "/components/:path*",
+        destination: "/docs/components/:path*",
+        permanent: true,
+      },
+   
+    ];
+  },
 };
 
 module.exports = withContentlayer(nextConfig);

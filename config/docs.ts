@@ -43,11 +43,33 @@ export const docsConfig: DocsConfig = {
       title: "Components",
       items: [
         {
-          title: "Globe",
-          href: `/docs/components/globe`,
+          title: "Globe (Cobe)",
+          href: `/docs/components/globe-cobe`,
           items: [],
         },
       ],
-    }
+    },
+    {
+      title: "Buttons",
+      items: [
+        {
+          title: "Shiny Button",
+          href: `/docs/components/shiny-button`,
+          items: [],
+        },
+      ],
+    },
+    {
+      title: "Text Animations",
+      items: [
+        {
+          title: "Fade Text",
+          href: `/docs/components/fade-text`,
+          items: [],
+          label: "",
+        },
+     
+      ],
+    },
   ],
 };

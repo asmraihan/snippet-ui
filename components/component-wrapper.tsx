@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Background } from "./background";
 
 interface ComponentWrapperProps {
   className?: string;
@@ -15,11 +16,13 @@ const ComponentWrapper = ({ className, children }: ComponentWrapperProps) => {
       <div
         className={cn(
           `absolute inset-0 h-full w-full`,
-          `bg-[radial-gradient(#00000055_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff22_1px,transparent_1px)]`,
-          "lab-bg [background-size:16px_16px]",
+          // `bg-[radial-gradient(#00000055_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff22_1px,transparent_1px)]`,
+          // "lab-bg [background-size:20px_20px]",
+          `bg-[url('/grid.svg')] invert dark:invert-0`,
         )}
       />
       {children}
+      {/* <Background /> */}
     </div>
   );
 };
