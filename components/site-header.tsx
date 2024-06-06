@@ -29,11 +29,11 @@ export async function SiteHeader() {
       <div className="container flex h-16 items-center justify-between">
         <MainNav />
         <MobileNav />
-        <div className="w-full mr-4 md:w-auto md:flex-none">
+        <div className="w-full mx-4 md:w-auto md:flex-none">
           <CommandMenu />
         </div>
         <div className="flex  items-center justify-between gap-2 md:justify-end">
-          <Link href={"https://github.com/asmraihan/snippet-ui"} target="_blank" rel="noreferrer">
+          <Link href={"https://github.com/asmraihan/snippet-ui"} target="_blank" rel="noreferrer" className="hidden md:block">
             <Badge
               aria-hidden="true"
               className="rounded-md px-3.5 py-1.5"

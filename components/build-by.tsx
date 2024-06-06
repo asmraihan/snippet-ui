@@ -40,7 +40,7 @@ export default function BuildBy() {
                                 target="_blank"
                             >
                                 <Button variant="ghost" size="icon">
-                                    <Icons.twitter className="h-4 w-4" />
+                                    <Icons.twitter className="h-4 w-4 dark:fill-white" />
                                 </Button>
                             </Link>
                             <Link

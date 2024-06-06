@@ -21,12 +21,12 @@ const nextConfig = {
     return [
       {
         source: "/components",
-        destination: "/docs/components/globe-cobe",
+        destination: "/docs/components/globe-github",
         permanent: true,
       },
       {
         source: "/docs/components",
-        destination: "/docs/components/globe-cobe",
+        destination: "/docs/components/globe-github",
         permanent: true,
       },
       {

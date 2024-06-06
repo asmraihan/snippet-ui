@@ -22,7 +22,7 @@ const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
       <button
         className={cn(
           buttonVariants(),
-          "hidden max-w-52 gap-2 overflow-hidden whitespace-pre md:flex",
+          "shadow-2xl  whitespace-pre-wrap text-sm font-medium leading-none tracking-tight",
           "group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
           className,
         )}

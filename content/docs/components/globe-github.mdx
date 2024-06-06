@@ -1,0 +1,74 @@
+---
+title: Globe (Github)
+date: 2023-08-02
+description: GitHub's famous globe animation component.
+author: raihan
+published: true
+---
+
+
+<ComponentPreview name="globe-github-demo" />
+
+<Steps>
+
+### Installation
+
+Copy and paste the following code into your project.
+
+```bash
+npm i three three-globe @react-three/fiber @react-three/drei
+```
+
+```text
+components/snippet/globe-github.tsx
+```
+
+<ComponentSource name="globe-github" />
+
+</Steps>
+
+## Props
+
+### GlobeConfig 
+
+| Prop | Type | Description |
+| ---- | ---- | ----------- |
+| pointSize | number | Optional. Size of the points on the globe. |
+| globeColor | string | Optional. Color of the globe. |
+| showAtmosphere | boolean | Optional. Whether to show the atmosphere layer. |
+| atmosphereColor | string | Optional. Color of the atmosphere. |
+| atmosphereAltitude | number | Optional. Altitude of the atmosphere layer. |
+| emissive | string | Optional. Emissive color of the globe material. |
+| emissiveIntensity | number | Optional. Intensity of the emissive color. |
+| shininess | number | Optional. Shininess of the globe material. |
+| polygonColor | string | Optional. Color of the polygons on the globe. |
+| ambientLight | string | Optional. Color of the ambient light in the scene. |
+| directionalLeftLight | string | Optional. Color of the directional light from the left. |
+| directionalTopLight | string | Optional. Color of the directional light from the top. |
+| pointLight | string | Optional. Color of the point light in the scene. |
+| arcTime | number | Optional. Animation time for the arcs. |
+| arcLength | number | Optional. Length of the dash in the arc animations. |
+| rings | number | Optional. Number of rings to display initially. |
+
+### WorldProps
+
+| Prop | Type | Description |
+| ---- | ---- | ----------- |
+| globeConfig | GlobeConfig | Configuration options for the globe. |
+| data | Position[] | Array of positions to display arcs between. |
+
+### Position Type
+
+| Prop | Type | Description |
+| ---- | ---- | ----------- |
+| order | number | Order of the arc. |
+| startLat | number | Starting latitude of the arc. |
+| startLng | number | Starting longitude of the arc. |
+| endLat | number | Ending latitude of the arc. |
+| endLng | number | Ending longitude of the arc. |
+| arcAlt | number | Altitude of the arc. |
+| color | string | Color of the arc. |
+
+## Credits
+
+This component is built on top of react-three. Inspiration for this globe is taken from GitHub's Homepage

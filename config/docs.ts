@@ -13,7 +13,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Community",
-      href: "https://snipet-ui.app/roadmap",
+      href: "https://snippet-ui.live/community",
       external: true,
     },
   ],
@@ -42,6 +42,11 @@ export const docsConfig: DocsConfig = {
     {
       title: "Components",
       items: [
+        {
+          title: "Globe (Github)",
+          href: `/docs/components/globe-github`,
+          items: [],
+        },
         {
           title: "Globe (Cobe)",
           href: `/docs/components/globe-cobe`,
