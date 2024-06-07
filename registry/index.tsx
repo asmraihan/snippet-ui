@@ -3,11 +3,14 @@ import * as React from "react";
 
 const snippet: Registry = {
 
+  //? Buttons
   "shiny-button": {
     name: "shiny-button",
     type: "components:ui",
     files: ["registry/components/snippet/shiny-button.tsx"],
   },
+
+  //? Components
   "globe-cobe": {
     name: "globe-cobe",
     type: "components:ui",
@@ -18,10 +21,18 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/globe-github.tsx"],
   },
+
+  //? Text Animations
+  "fade-text": {
+    name: "fade-text",
+    type: "components:ui",
+    files: ["registry/components/snippet/fade-text.tsx"],
+  },
 };
 
 const demo: Registry = {
 
+  //? Buttons
   "shiny-button-demo": {
     name: "shiny-button-demo",
     type: "components:demo",
@@ -30,6 +41,8 @@ const demo: Registry = {
       () => import("@/registry/components/demo/shiny-button-demo"),
     ),
   },
+
+    //? Components
   "globe-cobe-demo": {
     name: "globe-cobe-demo",
     type: "components:demo",
@@ -44,6 +57,16 @@ const demo: Registry = {
     files: ["registry/components/demo/globe-github-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/globe-github-demo"),
+    ),
+  },
+
+  //? Text Animations
+  "fade-text-demo": {
+    name: "fade-text-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/fade-text-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/fade-text-demo"),
     ),
   },
   
