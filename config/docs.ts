@@ -43,6 +43,16 @@ export const docsConfig: DocsConfig = {
       title: "Components",
       items: [
         {
+          title: "Text Cloud",
+          href: `/docs/components/text-cloud`,
+          items: [],
+        },
+        {
+          title: "Icon Cloud",
+          href: `/docs/components/icon-cloud`,
+          items: [],
+        },
+        {
           title: "Globe (Github)",
           href: `/docs/components/globe-github`,
           items: [],

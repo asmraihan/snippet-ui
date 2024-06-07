@@ -1,0 +1,60 @@
+---
+title: Text Cloud
+date: 2024-06-06
+description: Interactive text cloud component
+author: raihan
+published: true
+---
+
+<ComponentPreview name="text-cloud-demo" />
+
+<Steps>
+
+### Installation
+
+Copy and paste the following code into your project.
+
+```bash
+npm i @frank-mayer/react-tag-cloud
+```
+
+```text
+components/snippet/icon-cloud.tsx
+```
+
+<ComponentSource name="text-cloud" />
+
+</Steps>
+
+
+## Props
+
+### TextCloud
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| container | String or HTMLElement or Array | Container for constructing a tagcloud. |
+| texts | Array | List of tag text for init. |
+| options | Object | Options for the tagcloud. |
+| options.radius | Number | Default: 100, Unit: px, Rolling radius. |
+| options.maxSpeed | Optional: 'slow', 'normal', 'fast' | Default: 'normal', Rolling max speed. |
+| options.initSpeed | Optional: 'slow', 'normal', 'fast' | Default: 'normal', Rolling init speed. |
+| options.direction | Number | Default: 135 (right-bottom), Unit: clockwise deg, Rolling init direction. |
+| options.keep | Boolean | Default: true, Whether to keep rolling after mouse out area. |
+| options.reverseDirection | Boolean | Default: false, Whether to reverse the direction when the mouse controls the direction. |
+| options.containerClass | String | Default: tagcloud, Css class to be used for the tagcloud container. |
+| options.itemClass | String | Default: tagcloud--item, Css class to be used for tagcloud items. |
+| options.useContainerInlineStyles | Boolean | Default: true, Add inline styles to the tagcloud container. |
+| options.useItemInlineStyles | Boolean | Default: true, Add common inline styles to the items. |
+| options.useHTML | Boolean | Default: false, Add html tags with text. |
+
+### Instance Methods
+
+- `tagcloud.update(texts)`: Update tag list.
+- `tagcloud.pause()`: Pause the tagcloud animation.
+- `tagcloud.resume()`: Resume the tagcloud animation.
+- `tagcloud.destroy()`: Destroy the tagcloud instance.
+
+## Credits
+
+- Credits to (https://github.com/tsukinoko-kun/react-tag-cloud)

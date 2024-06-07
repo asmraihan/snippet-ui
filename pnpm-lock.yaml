@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@frank-mayer/react-tag-cloud':
+        specifier: ^1.2.1
+        version: 1.2.1(react@18.2.0)
       '@hookform/resolvers':
         specifier: ^3.1.1
         version: 3.5.0(react-hook-form@7.51.5(react@18.2.0))
@@ -143,6 +146,9 @@ importers:
       react-hook-form:
         specifier: ^7.45.0
         version: 7.51.5(react@18.2.0)
+      react-icon-cloud:
+        specifier: ^4.1.4
+        version: 4.1.4(react@18.2.0)
       react-spring:
         specifier: ^9.7.3
         version: 9.7.3(@react-three/fiber@8.16.8(react-dom@18.2.0(react@18.2.0))(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.3.3)(react@18.2.0))(react@18.2.0)(three@0.165.0))(konva@9.3.11)(react-dom@18.2.0(react@18.2.0))(react-konva@18.2.10(konva@9.3.11)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.3.3)(react@18.2.0))(react-zdog@1.2.2)(react@18.2.0)(three@0.165.0)(zdog@1.1.3)
@@ -995,6 +1001,10 @@ packages:
       '@effect-ts/otel-node':
         optional: true
 
+  '@csstools/convert-colors@2.0.0':
+    resolution: {integrity: sha512-P7BVvddsP2Wl5v3drJ3ArzpdfXMqoZ/oHOV/yFiGFb3JQr9Z9UXZ9tnHAKJsO89lfprR1F9ExW3Yij21EjEBIA==}
+    engines: {node: '>=6.0.0'}
+
   '@effect-ts/core@0.60.5':
     resolution: {integrity: sha512-qi1WrtJA90XLMnj2hnUszW9Sx4dXP03ZJtCc5DiUBIOhF4Vw7plfb65/bdBySPoC9s7zy995TdUX1XBSxUkl5w==}
 
@@ -1205,6 +1215,11 @@ packages:
 
   '@floating-ui/utils@0.2.2':
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+
+  '@frank-mayer/react-tag-cloud@1.2.1':
+    resolution: {integrity: sha512-xmbwDCLgk9PUpMzbUZU4Y8nMWX1rtnaP+B0h7Hkagtc+eWBzqYCxDOaXncXdcSpxVEbDbpT0ntK+bcuzy9zZyg==}
+    peerDependencies:
+      react: ^18.2.0
 
   '@grpc/grpc-js@1.10.8':
     resolution: {integrity: sha512-vYVqYzHicDqyKB+NQhAc54I1QWCBLCrYG6unqOIcBTHx+7x8C9lcoLj3KVJXs2VB4lUbpWY+Kk9NipcbXYWmvg==}
@@ -2512,6 +2527,9 @@ packages:
   '@vercel/og@0.5.20':
     resolution: {integrity: sha512-zi+ZXSx/peXA+1lq7s/5Vzmm/TTfTSf/5P1qNYnh42+7X+pZmahWoXt0i7SWiq3WagfsNUNA4hUDapDiHRoXqA==}
     engines: {node: '>=16'}
+
+  TagCloud@2.5.0:
+    resolution: {integrity: sha512-lMr8UCbOLOyP9iKc/lJalpNTm25rjmplbQ20ljw02tyx4ITBxDh4TRBhSpayC6QGjtRtvslUljfr2SGoPOGnXw==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -5388,6 +5406,12 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
 
+  react-icon-cloud@4.1.4:
+    resolution: {integrity: sha512-hc8yGNU98V6ObPdeNIt75M016xGMxbTWqB4l6exo1uwE5bvFU095unMbX2K3YBKYhGKEV3c7fSmq3jD3cRWX+A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -7518,6 +7542,8 @@ snapshots:
       ts-pattern: 4.3.0
       type-fest: 3.13.1
 
+  '@csstools/convert-colors@2.0.0': {}
+
   '@effect-ts/core@0.60.5':
     dependencies:
       '@effect-ts/system': 0.57.5
@@ -7674,6 +7700,11 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
 
   '@floating-ui/utils@0.2.2': {}
+
+  '@frank-mayer/react-tag-cloud@1.2.1(react@18.2.0)':
+    dependencies:
+      TagCloud: 2.5.0
+      react: 18.2.0
 
   '@grpc/grpc-js@1.10.8':
     dependencies:
@@ -9323,6 +9354,8 @@ snapshots:
       '@resvg/resvg-wasm': 2.6.0
       satori: 0.10.9
       yoga-wasm-web: 0.3.3
+
+  TagCloud@2.5.0: {}
 
   abort-controller@3.0.0:
     dependencies:
@@ -12777,6 +12810,11 @@ snapshots:
 
   react-hook-form@7.51.5(react@18.2.0):
     dependencies:
+      react: 18.2.0
+
+  react-icon-cloud@4.1.4(react@18.2.0):
+    dependencies:
+      '@csstools/convert-colors': 2.0.0
       react: 18.2.0
 
   react-is@16.13.1: {}

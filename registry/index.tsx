@@ -11,6 +11,16 @@ const snippet: Registry = {
   },
 
   //? Components
+  "text-cloud": {
+    name: "icon-cloud",
+    type: "components:ui",
+    files: ["registry/components/snippet/text-cloud.tsx"],
+  },
+  "icon-cloud": {
+    name: "icon-cloud",
+    type: "components:ui",
+    files: ["registry/components/snippet/icon-cloud.tsx"],
+  },
   "globe-cobe": {
     name: "globe-cobe",
     type: "components:ui",
@@ -43,6 +53,23 @@ const demo: Registry = {
   },
 
     //? Components
+
+  "text-cloud-demo": {
+    name: "text-cloud-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/text-cloud-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/text-cloud-demo"),
+    ),
+  },
+  "icon-cloud-demo": {
+    name: "icon-cloud-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/icon-cloud-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/icon-cloud-demo"),
+    ),
+  },
   "globe-cobe-demo": {
     name: "globe-cobe-demo",
     type: "components:demo",
