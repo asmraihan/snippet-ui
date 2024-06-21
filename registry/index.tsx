@@ -11,6 +11,11 @@ const snippet: Registry = {
   },
 
   //? Components
+  "dock-menu": {
+    name: "dock-menu",
+    type: "components:ui",
+    files: ["registry/components/snippet/dock-menu.tsx"],
+  },
   "text-cloud": {
     name: "icon-cloud",
     type: "components:ui",
@@ -52,8 +57,16 @@ const demo: Registry = {
     ),
   },
 
-    //? Components
+  //? Components
 
+  "dock-demo": {
+    name: "dock-menu-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/dock-menu-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/dock-menu-demo"),
+    ),
+  },
   "text-cloud-demo": {
     name: "text-cloud-demo",
     type: "components:demo",
@@ -96,7 +109,7 @@ const demo: Registry = {
       () => import("@/registry/components/demo/fade-text-demo"),
     ),
   },
-  
+
 };
 
 export const registry: Registry = {

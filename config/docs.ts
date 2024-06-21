@@ -43,6 +43,11 @@ export const docsConfig: DocsConfig = {
       title: "Components",
       items: [
         {
+          title: "Dock menu",
+          href: `/docs/components/dock-menu`,
+          items: [],
+        },
+        {
           title: "Text Cloud",
           href: `/docs/components/text-cloud`,
           items: [],
