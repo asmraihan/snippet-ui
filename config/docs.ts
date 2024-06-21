@@ -43,6 +43,11 @@ export const docsConfig: DocsConfig = {
       title: "Components",
       items: [
         {
+          title: "Animated Tabs",
+          href: `/docs/components/animated-tabs`,
+          items: [],
+        },
+        {
           title: "Dock menu",
           href: `/docs/components/dock-menu`,
           items: [],
