@@ -5,7 +5,6 @@ import { ElementRef, HTMLAttributes, useRef } from "react";
 
 import { cn } from "@/lib/utils"
 
-import { AlbumIcon, HomeIcon, MonitorIcon } from "lucide-react";
 
 import {
     MotionValue,
@@ -101,12 +100,6 @@ function DockItem({ children, containerX, mouseX }: DockItemProps) {
     );
 }
 
-export default function DockMenu() {
-    const items = [
-        { id: "first-id", icon: <AlbumIcon size={32} /> },
-        { id: "second-id", icon: <HomeIcon size={32} /> },
-        { id: "fourth-id", icon: <MonitorIcon size={32} /> },
-    ];
-
+export default function DockMenu({items} : {items: DockItem[]}) {
     return <Dock items={items} />;
 }

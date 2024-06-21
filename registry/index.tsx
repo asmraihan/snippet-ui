@@ -59,7 +59,7 @@ const demo: Registry = {
 
   //? Components
 
-  "dock-demo": {
+  "dock-menu-demo": {
     name: "dock-menu-demo",
     type: "components:demo",
     files: ["registry/components/demo/dock-menu-demo.tsx"],
