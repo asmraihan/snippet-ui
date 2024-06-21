@@ -45,7 +45,7 @@ export default function AnimatedTabs({
                             layoutId="clicked-button"
                             transition={{ duration: 0.2 }}
                             className={cn(
-                                "absolute inset-0 rounded-full bg-white",
+                                "absolute inset-0 rounded-full bg-black dark:bg-white",
                                 activeTabClassName
                             )}
                         />
@@ -54,7 +54,7 @@ export default function AnimatedTabs({
                     <span
                         className={cn(
                             "relative text-sm block font-medium duration-200",
-                            activeIdx === index ? "text-black delay-100" : "text-white"
+                            activeIdx === index ? "text-white dark:text-black delay-100" : "text-black dark:text-white"
                         )}
                     >
                         {tab.title}
