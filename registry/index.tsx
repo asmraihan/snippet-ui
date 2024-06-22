@@ -16,6 +16,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/animated-tabs.tsx"],
   },
+  "dropdown-menu": {
+    name: "dropdown-menu",
+    type: "components:ui",
+    files: ["registry/components/snippet/dropdown-menu.tsx"],
+  },
   "dock-menu": {
     name: "dock-menu",
     type: "components:ui",
@@ -78,6 +83,14 @@ const demo: Registry = {
     files: ["registry/components/demo/dock-menu-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/dock-menu-demo"),
+    ),
+  },
+  "dropdown-menu-demo": {
+    name: "dropdown-menu-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/dropdown-menu-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/dropdown-menu-demo"),
     ),
   },
   "text-cloud-demo": {
