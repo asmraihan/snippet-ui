@@ -16,6 +16,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/animated-tabs.tsx"],
   },
+  "line-tabs": {
+    name: "line-tabs",
+    type: "components:ui",
+    files: ["registry/components/snippet/line-tabs.tsx"],
+  },
   "dropdown-menu": {
     name: "dropdown-menu",
     type: "components:ui",
@@ -68,13 +73,20 @@ const demo: Registry = {
   },
 
   //? Components
-
   "animated-tabs-demo": {
     name: "dock-menu-demo",
     type: "components:demo",
     files: ["registry/components/demo/animated-tabs-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/animated-tabs-demo"),
+    ),
+  },
+  "line-tabs-demo": {
+    name: "dock-menu-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/line-tabs-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/line-tabs-demo"),
     ),
   },
   "dock-menu-demo": {

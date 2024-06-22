@@ -48,6 +48,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Line Tabs",
+          href: `/docs/components/line-tabs`,
+          items: [],
+        },
+        {
           title: "Dropdown menu",
           href: `/docs/components/dropdown-menu`,
           items: [],
