@@ -16,6 +16,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/input-focus-animation.tsx"],
   },
+  "input-focus-blur": {
+    name: "input-focus-blur",
+    type: "components:ui",
+    files: ["registry/components/snippet/input-focus-blur.tsx"],
+  },
 
   //? Components
   "animated-tabs": {
