@@ -21,12 +21,12 @@ const nextConfig = {
     return [
       {
         source: "/components",
-        destination: "/docs/components/globe-github",
+        destination: "/docs/components/animated-tabs",
         permanent: true,
       },
       {
         source: "/docs/components",
-        destination: "/docs/components/globe-github",
+        destination: "/docs/components/animated-tabs",
         permanent: true,
       },
       {

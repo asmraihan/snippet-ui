@@ -87,6 +87,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/3d-card`,
           items: [],
         },
+        {
+          title: "Shiny Card",
+          href: `/docs/components/shiny-card`,
+          items: [],
+        },
       ],
     },
     {
@@ -105,6 +110,18 @@ export const docsConfig: DocsConfig = {
         {
           title: "Fade Text",
           href: `/docs/components/fade-text`,
+          items: [],
+          label: "",
+        },
+     
+      ],
+    },
+    {
+      title: "Carousel",
+      items: [
+        {
+          title: "Animated Slider",
+          href: `/docs/components/animated-slider`,
           items: [],
           label: "",
         },

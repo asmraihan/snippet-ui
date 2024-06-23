@@ -56,12 +56,24 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/3d-card.tsx"],
   },
+  "shiny-card": {
+    name: "shiny-card",
+    type: "components:ui",
+    files: ["registry/components/snippet/shiny-card.tsx"],
+  },
 
   //? Text Animations
   "fade-text": {
     name: "fade-text",
     type: "components:ui",
     files: ["registry/components/snippet/fade-text.tsx"],
+  },
+
+  //? Slider
+  "animated-slider": {
+    name: "animated-slider",
+    type: "components:ui",
+    files: ["registry/components/snippet/animated-slider.tsx"],
   },
 };
 
@@ -150,6 +162,14 @@ const demo: Registry = {
       () => import("@/registry/components/demo/3d-card-demo"),
     ),
   },
+  "shiny-card-demo": {
+    name: "shiny-card-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/shiny-card-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/shiny-card-demo"),
+    ),
+  },
 
   //? Text Animations
   "fade-text-demo": {
@@ -158,6 +178,16 @@ const demo: Registry = {
     files: ["registry/components/demo/fade-text-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/fade-text-demo"),
+    ),
+  },
+
+  //? Slider
+  "animated-slider-demo": {
+    name: "animated-slider-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/animated-slider-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/animated-slider-demo"),
     ),
   },
 
