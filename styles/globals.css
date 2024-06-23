@@ -5,7 +5,7 @@
 
 /* scroll bar */
 
-
+/* 
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #ffffff;
@@ -28,7 +28,7 @@
 .dark ::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   border-radius: 4px;
-}
+} */
 
 
 @layer base {
@@ -110,6 +110,19 @@
     @apply ml-[-50px] mt-[-4px];
     content: counter(step);
   }
+
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-2xl bg-neutral-800;
+  }
+
+  ::selection {
+    @apply bg-emerald-500/10 text-emerald-400;
+  }
+
 }
 
 @media (max-width: 640px) {

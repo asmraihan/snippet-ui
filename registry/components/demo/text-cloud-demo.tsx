@@ -29,7 +29,7 @@ const slugs = [
 
 export default function TextCloudDemo() {
   return (
-    <div className="h-[600px] relative rounded-lg border bg-background">
+    <div className="relative p-10 rounded-lg border bg-background">
       <TextCloud iconSlugs={slugs} />
     </div>
   );

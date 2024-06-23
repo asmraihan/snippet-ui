@@ -24,7 +24,7 @@ function Tab({
       }}
       className={`${
         selected ? "text-blue-500" : "hover:text-gray-600"
-      } relative rounded-md px-2 py-1 text-sm font-medium text-gray-500 transition-colors duration-300`}
+      } relative rounded-md px-2 py-1 font-medium text-gray-500 transition-colors duration-300`}
     >
       <span className="relative z-10">{text}</span>
       {selected ? (
@@ -33,7 +33,7 @@ function Tab({
           layoutId={`${customID}linetab`}
           transition={{ type: "spring", duration: 0.4, bounce: 0, delay: 0.1 }}
         >
-          <span className="z-0 h-[3px] w-[60%] rounded-t-full bg-blue-500" />
+          <span className="z-0 h-[4px] w-[60%] rounded-s-full rounded-e-full bg-blue-500" />
         </motion.div>
       ) : null}
     </button>
