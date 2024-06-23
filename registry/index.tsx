@@ -51,6 +51,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/globe-github.tsx"],
   },
+  "3d-card": {
+    name: "3d-card",
+    type: "components:ui",
+    files: ["registry/components/snippet/3d-card.tsx"],
+  },
 
   //? Text Animations
   "fade-text": {
@@ -135,6 +140,14 @@ const demo: Registry = {
     files: ["registry/components/demo/globe-github-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/globe-github-demo"),
+    ),
+  },
+  "3d-card-demo": {
+    name: "3d-card-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/3d-card-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/3d-card-demo"),
     ),
   },
 

@@ -82,6 +82,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/globe-cobe`,
           items: [],
         },
+        {
+          title: "3D Card",
+          href: `/docs/components/3d-card`,
+          items: [],
+        },
       ],
     },
     {
