@@ -105,6 +105,21 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Inputs",
+      items: [
+        {
+          title: "Input Focus Animation",
+          href: `/docs/components/input-focus-animation`,
+          items: [],
+        },
+        {
+          title: "Input Focus Blur",
+          href: `/docs/components/input-focus-blur`,
+          items: [],
+        },
+      ],
+    },
+    {
       title: "Text Animations",
       items: [
         {

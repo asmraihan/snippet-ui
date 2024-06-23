@@ -10,6 +10,13 @@ const snippet: Registry = {
     files: ["registry/components/snippet/shiny-button.tsx"],
   },
 
+  //? Inputs
+  "input-focus-animation": {
+    name: "input-focus-animation",
+    type: "components:ui",
+    files: ["registry/components/snippet/input-focus-animation.tsx"],
+  },
+
   //? Components
   "animated-tabs": {
     name: "animated-tabs",
@@ -86,6 +93,24 @@ const demo: Registry = {
     files: ["registry/components/demo/shiny-button-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/shiny-button-demo"),
+    ),
+  },
+
+  //? Inputs
+  "input-focus-animation-demo": {
+    name: "input-focus-animation-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/input-focus-animation-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/input-focus-animation-demo"),
+    ),
+  },
+  "input-focus-blur-demo": {
+    name: "input-focus-blur-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/input-focus-blur-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/input-focus-blur-demo"),
     ),
   },
 
