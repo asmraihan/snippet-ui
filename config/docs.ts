@@ -107,6 +107,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/button-animation`,
           items: [],
         },
+        {
+          title: "Expand Button",
+          href: `/docs/components/expand-button`,
+          items: [],
+        },
       ],
     },
     {

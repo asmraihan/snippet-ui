@@ -14,6 +14,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/button-animation.tsx"],
   },
+  "expand-button": {
+    name: "expand-button",
+    type: "components:ui",
+    files: ["registry/components/snippet/expand-button.tsx"],
+  },
 
   //? Inputs
   "input-focus-animation": {
@@ -111,6 +116,14 @@ const demo: Registry = {
     files: ["registry/components/demo/button-animation-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/button-animation-demo"),
+    ),
+  },
+  "expand-button-demo": {
+    name: "expand-button-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/expand-button-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/expand-button-demo"),
     ),
   },
 
