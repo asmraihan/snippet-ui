@@ -14,7 +14,7 @@ interface InteractiveCardProps
   bottomContent?: React.ReactNode
 }
 
-const ShiftCardHeader = React.forwardRef<
+const InteractiveCardHeader = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ children, ...props }, ref) => (
@@ -22,14 +22,14 @@ const ShiftCardHeader = React.forwardRef<
     {children}
   </div>
 ))
-ShiftCardHeader.displayName = "ShiftCardHeader"
+InteractiveCardHeader.displayName = "InteractiveCardHeader"
 
-interface ShiftCardContentProps extends React.HTMLAttributes<HTMLDivElement> {
+interface InteractiveCardContentProps extends React.HTMLAttributes<HTMLDivElement> {
   isHovered: boolean
 }
-const ShiftCardContent = React.forwardRef<
+const InteractiveCardContent = React.forwardRef<
   HTMLDivElement,
-  ShiftCardContentProps
+  InteractiveCardContentProps
 >(({ isHovered, children, ...divProps }, ref) => {
   // Explicitly define motion props to avoid passing incompatible HTML attributes
   const motionProps: MotionProps = {
@@ -42,7 +42,7 @@ const ShiftCardContent = React.forwardRef<
 
   return (
     <motion.div
-      key="shift-card-content"
+      key="interactive-card-content"
       ref={ref}
       {...motionProps}
       className={divProps.className}
@@ -51,7 +51,7 @@ const ShiftCardContent = React.forwardRef<
     </motion.div>
   )
 })
-ShiftCardContent.displayName = "ShiftCardContent"
+InteractiveCardContent.displayName = "ShiftCardContent"
 
 const InteractiveCard = React.forwardRef<HTMLDivElement, InteractiveCardProps>(
   (
@@ -100,7 +100,7 @@ const InteractiveCard = React.forwardRef<HTMLDivElement, InteractiveCardProps>(
         onTap={handleTap}
         {...props}
       >
-        <ShiftCardHeader className="flex h-[46px] w-full flex-col relative text-primary-foreground ">
+        <InteractiveCardHeader className="flex h-[46px] w-full flex-col relative text-primary-foreground ">
           <div className=" w-full">
             {topContent}
 
@@ -108,7 +108,7 @@ const InteractiveCard = React.forwardRef<HTMLDivElement, InteractiveCardProps>(
               {isHovered ? <>{topAnimateContent}</> : null}
             </AnimatePresence>
           </div>
-        </ShiftCardHeader>
+        </InteractiveCardHeader>
 
         <div className="pb-12 ">
           <AnimatePresence>
@@ -116,19 +116,19 @@ const InteractiveCard = React.forwardRef<HTMLDivElement, InteractiveCardProps>(
           </AnimatePresence>
         </div>
 
-        <ShiftCardContent
+        <InteractiveCardContent
           isHovered={isHovered}
           className="absolute bottom-0 left-0 right-0 flex  flex-col gap-4  rounded-xl  "
         >
           <motion.div className="flex w-full flex-col gap-1  ">
             {bottomContent}
           </motion.div>
-        </ShiftCardContent>
+        </InteractiveCardContent>
       </motion.div>
     )
   }
 )
 
-InteractiveCard.displayName = "ShiftCard"
+InteractiveCard.displayName = "InteractiveCard"
 
-export { InteractiveCard, ShiftCardHeader, ShiftCardContent }
+export { InteractiveCard, InteractiveCardHeader, InteractiveCardContent}
