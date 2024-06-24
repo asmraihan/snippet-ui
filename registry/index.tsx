@@ -83,6 +83,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/shiny-card.tsx"],
   },
+  "numeric-counter": {
+    name: "numeric-counter",
+    type: "components:ui",
+    files: ["registry/components/snippet/numeric-counter.tsx"],
+  },
 
   //? Text Animations
   "fade-text": {
@@ -224,6 +229,14 @@ const demo: Registry = {
     files: ["registry/components/demo/shiny-card-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/shiny-card-demo"),
+    ),
+  },
+  "numeric-counter-demo": {
+    name: "numeric-counter-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/numeric-counter-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/numeric-counter-demo"),
     ),
   },
 

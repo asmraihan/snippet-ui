@@ -92,6 +92,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/shiny-card`,
           items: [],
         },
+        {
+          title: "Numeric Counter",
+          href: `/docs/components/numeric-counter`,
+          items: [],
+        },
       ],
     },
     {
