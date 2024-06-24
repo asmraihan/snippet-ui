@@ -1,0 +1,47 @@
+---
+title: Button Animation
+date: 2024-05-24
+description: An animated button component.
+author: raihan
+published: true
+---
+
+
+<ComponentPreview name="button-animation-demo" />
+
+<Steps>
+
+### Installation
+
+Copy and paste the following code into your project.
+
+```bash
+npm install @radix-ui/react-slot
+```
+
+```text
+components/snippet/button-animation.tsx
+```
+
+<ComponentSource name="button-animation" />
+
+</Steps>
+
+## Props
+
+| Prop      | Type        | Description                                                                                    | Default |
+| --------- | ----------- | ---------------------------------------------------------------------------------------------- | ------- |
+| className | string      | The css classes for the component                                                              |         |
+| variant   | string      | The variant of the button. Possible values: `default`, `destructive`, `outline`, `secondary`, `ghost`, `link`, `expandIcon` | `default` |
+| size      | string      | The size of the button. Possible values: `default`, `sm`, `lg`, `icon` | `default` |
+| asChild   | boolean     | If true, the button will be rendered as a child of the `Slot` component. | `false` |
+| Icon      | React.ElementType | The icon component to render. | |
+| iconPlacement | string | The placement of the icon. Possible values: `left`, `right` | `left` |
+
+## Credits
+
+This component is built on top of radix-ui's `Slot` component.
+
+
+
+

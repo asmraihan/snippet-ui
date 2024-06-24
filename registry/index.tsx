@@ -9,6 +9,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/shiny-button.tsx"],
   },
+  "button-animation": {
+    name: "button-animation",
+    type: "components:ui",
+    files: ["registry/components/snippet/button-animation.tsx"],
+  },
 
   //? Inputs
   "input-focus-animation": {
@@ -98,6 +103,14 @@ const demo: Registry = {
     files: ["registry/components/demo/shiny-button-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/shiny-button-demo"),
+    ),
+  },
+  "button-animation-demo": {
+    name: "button-animation-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/button-animation-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/button-animation-demo"),
     ),
   },
 

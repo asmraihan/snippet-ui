@@ -102,6 +102,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/shiny-button`,
           items: [],
         },
+        {
+          title: "Button Animation",
+          href: `/docs/components/button-animation`,
+          items: [],
+        },
       ],
     },
     {
