@@ -88,6 +88,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Interactive Card",
+          href: `/docs/components/interactive-card`,
+          items: [],
+        },
+        {
           title: "Shiny Card",
           href: `/docs/components/shiny-card`,
           items: [],

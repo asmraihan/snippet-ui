@@ -78,6 +78,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/3d-card.tsx"],
   },
+  "interactive-card": {
+    name: "interactive-card",
+    type: "components:ui",
+    files: ["registry/components/snippet/interactive-card.tsx"],
+  },
   "shiny-card": {
     name: "shiny-card",
     type: "components:ui",
@@ -221,6 +226,14 @@ const demo: Registry = {
     files: ["registry/components/demo/3d-card-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/3d-card-demo"),
+    ),
+  },
+  "interactive-card-demo": {
+    name: "interactive-card-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/interactive-card-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/interactive-card-demo"),
     ),
   },
   "shiny-card-demo": {
