@@ -78,7 +78,7 @@ export function constructMetadata({
       creator: "@asmraihan",
     },
     icons: "/favicon.ico",
-    metadataBase: new URL("https://snippetui.live"),
+    metadataBase: new URL("https://snippet-ui.vercel.app"),
     authors: [
       {
         name: "asmraihan",

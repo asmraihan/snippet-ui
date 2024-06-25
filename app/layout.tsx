@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Inter as FontSans } from "next/font/google"
-import { cn } from "@/lib/utils";
+import { absoluteUrl, cn , constructMetadata } from "@/lib/utils";
 import "@/styles/globals.css";
 import "@/styles/mdx.css";
 import { fontSans } from "@/lib/fonts";
@@ -9,10 +9,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructMetadata({
   title: "Snippet UI",
   description: "Snippet UI is a Open source, TypeScript ready, Copy and paste library crafted for Design Engineers.",
-};
+  image: absoluteUrl("/api/og"),
+});
 
 export default function RootLayout({
   children,
