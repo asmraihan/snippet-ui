@@ -53,7 +53,7 @@ export function IntroFadeIn({ githubStars }: { githubStars: number | null }) {
                 className="mt-2 text-lg leading-8 text-muted-foreground"
                 variants={FADE_UP_ANIMATION_VARIANTS}
             >
-                SnippetUI is an Open source, TypeScript ready, Copy and paste library crafted for Design Engineers.
+                Snippet UI is an Open source, TypeScript ready, Copy and paste library crafted for Design Engineers.
             </motion.p>
             <motion.div
                 className="mt-4 flex items-center justify-center gap-x-6"
