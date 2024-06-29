@@ -93,6 +93,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/numeric-counter.tsx"],
   },
+  "chat-component": {
+    name: "chat-component",
+    type: "components:ui",
+    files: ["registry/components/snippet/chat-component.tsx"],
+  },
 
   //? Text Animations
   "fade-text": {
@@ -250,6 +255,14 @@ const demo: Registry = {
     files: ["registry/components/demo/numeric-counter-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/numeric-counter-demo"),
+    ),
+  },
+  "chat-component-demo": {
+    name: "chat-component-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/chat-component-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/chat-component-demo"),
     ),
   },
 

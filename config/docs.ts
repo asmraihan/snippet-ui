@@ -102,6 +102,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/numeric-counter`,
           items: [],
         },
+        {
+          title: "Chat Component",
+          href: `/docs/components/chat-component`,
+          items: [],
+        },
       ],
     },
     {
