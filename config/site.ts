@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Snippet UI",
-  url: "https://snippet-ui.vercel.app/",
-  ogImage: "https://snippet-ui.vercel.app/api/og",
+  url: "https://www.snippetui.tech/",
+  ogImage: "https://www.snippetui.tech/api/og",
   description:
     "Snippet UI is a Open source, TypeScript ready, Copy and paste library crafted for Design Engineers.",
   links: {

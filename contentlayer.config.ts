@@ -43,7 +43,7 @@ const computedFields = {
         dateModified: doc.date,
         description: doc.summary,
         image: doc.image,
-        url: `https://snippet-ui.vercel.app/${doc._raw.flattenedPath}`,
+        url: `https://www.snippetui.tech/${doc._raw.flattenedPath}`,
         author: {
           "@type": "Person",
           name: doc.author,

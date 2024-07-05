@@ -13,7 +13,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Community",
-      href: "https://snippet-ui.live/community",
+      href: "https://www.snippetui.tech/community",
       external: true,
     },
   ],

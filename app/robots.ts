@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/", "/public/"],
     },
-    sitemap: "https://snippet-ui.vercel.app/sitemap.xml",
+    sitemap: "https://www.snippetui.tech/sitemap.xml",
   };
 }
