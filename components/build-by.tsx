@@ -29,7 +29,8 @@ export default function BuildBy() {
                     </Avatar>
                     <div className="space-y-1">
                         <h4 className="text-sm font-semibold">Built by Asm Raihan</h4>
-                        <p className="text-sm">
+                        <p className="text-xs">Fullstack Developer</p>
+                        <p className="text-xs">
                             Check out my other projects{" "}
                             <Icons.arrowDown className="inline-block h-4 w-4" />
                         </p>

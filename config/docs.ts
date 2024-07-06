@@ -107,6 +107,11 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/chat-component`,
           items: [],
         },
+        {
+          title: "Kanban Board",
+          href: `/docs/components/kanban-board`,
+          items: [],
+        },
       ],
     },
     {

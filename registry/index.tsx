@@ -98,6 +98,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/chat-component.tsx"],
   },
+  "kanban-board": {
+    name: "kanban-board",
+    type: "components:ui",
+    files: ["registry/components/snippet/kanban-board.tsx"],
+  },
 
   //? Text Animations
   "fade-text": {
@@ -263,6 +268,14 @@ const demo: Registry = {
     files: ["registry/components/demo/chat-component-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/chat-component-demo"),
+    ),
+  },
+  "kanban-board-demo": {
+    name: "kanban-board-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/kanban-board-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/kanban-board-demo"),
     ),
   },
 
