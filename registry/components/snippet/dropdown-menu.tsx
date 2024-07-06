@@ -1,13 +1,9 @@
 "use client";
 
 import Link from "next/link";
-
 import { useState, useEffect } from "react";
-
 import { useAnimate, stagger, motion } from "framer-motion";
-
 import { ChevronRightIcon, SettingsIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 
 function useMenuAnimation(isOpen: boolean) {

@@ -1,5 +1,6 @@
-import React, { useId } from "react";
+"use client";
 
+import React, { useId } from "react";
 interface InputFocusAnimationProps {
     label: string;
     type: string;

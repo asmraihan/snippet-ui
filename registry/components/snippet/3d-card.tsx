@@ -1,3 +1,6 @@
+// @NOTE: in case you are using Next.js
+"use client";
+
 import React, { useRef } from "react";
 import {
   motion,
