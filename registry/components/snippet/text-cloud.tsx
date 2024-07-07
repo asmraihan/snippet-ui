@@ -9,7 +9,7 @@ interface TextCloudProps {
 const TextCloud = ({ iconSlugs }: TextCloudProps) => (
   <TagCloud
     options={(w) => ({
-      radius: 250,
+      radius: 200,
       maxSpeed: "normal",
       initSpeed: "normal",
       keep: true,

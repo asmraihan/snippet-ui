@@ -55,7 +55,7 @@ export const KanbanBoard: React.FC = () => {
         <div className="">
             <div className="flex gap-3">
                 <Column
-                    title="TODO"
+                    title="Todo"
                     column="todo"
                     headingColor="text-orange-400"
                     cards={cards}

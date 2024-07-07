@@ -98,7 +98,7 @@ Provide a basic example to showcase your component.
 
 ```typescript
 // Create a very basic example showcasing your component
-import ExampleComponent from '@/registry/components/snippet-ui/example-component'
+import ExampleComponent from '@/registry/components/snippet/example-component'
 
 const ExampleComponentDemo = () => (
   <div className="relative justify-center">

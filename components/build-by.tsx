@@ -22,7 +22,7 @@ export default function BuildBy() {
                 </Link>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4">
+                <div className="flex items-center justify-center gap-6">
                     <Avatar>
                         <AvatarImage src="https://avatars.githubusercontent.com/u/121637612?v=4" />
                         <AvatarFallback>VC</AvatarFallback>
