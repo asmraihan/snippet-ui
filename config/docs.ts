@@ -114,6 +114,12 @@ export const docsConfig: DocsConfig = {
           items: [],
           label: "New",
         },
+        {
+          title: "Scroll Progress Bar",
+          href: `/docs/components/scroll-progress-bar`,
+          items: [],
+          label: "New",
+        },
       ],
     },
     {

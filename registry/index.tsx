@@ -103,6 +103,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/kanban-board.tsx"],
   },
+  "scroll-progress-bar": {
+    name: "scroll-progress-bar",
+    type: "components:ui",
+    files: ["registry/components/snippet/scroll-progress-bar.tsx"],
+  },
 
   //? Text Animations
   "fade-text": {
@@ -276,6 +281,14 @@ const demo: Registry = {
     files: ["registry/components/demo/kanban-board-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/kanban-board-demo"),
+    ),
+  },
+  "scroll-progress-bar-demo": {
+    name: "scroll-progress-bar-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/scroll-progress-bar-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/scroll-progress-bar-demo"),
     ),
   },
 
