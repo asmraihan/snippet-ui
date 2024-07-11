@@ -107,6 +107,14 @@ const snippet: Registry = {
     name: "scroll-progress-bar",
     type: "components:ui",
     files: ["registry/components/snippet/scroll-progress-bar.tsx"],
+  }, 
+
+  //? Nav Bar
+
+  "dynamic-island-nav": {
+    name: "dynamic-island-nav",
+    type: "components:ui",
+    files: ["registry/components/snippet/dynamic-island-nav.tsx"],
   },
 
   //? Text Animations
@@ -289,6 +297,16 @@ const demo: Registry = {
     files: ["registry/components/demo/scroll-progress-bar-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/scroll-progress-bar-demo"),
+    ),
+  },
+
+  //? Nav Bars
+  "dynamic-island-nav-demo": {
+    name: "dynamic-island-nav-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/dynamic-island-nav-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/dynamic-island-nav-demo"),
     ),
   },
 

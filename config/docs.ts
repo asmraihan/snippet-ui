@@ -106,7 +106,6 @@ export const docsConfig: DocsConfig = {
           title: "Chat Component",
           href: `/docs/components/chat-component`,
           items: [],
-          label: "New",
         },
         {
           title: "Kanban Board",
@@ -117,6 +116,16 @@ export const docsConfig: DocsConfig = {
         {
           title: "Scroll Progress Bar",
           href: `/docs/components/scroll-progress-bar`,
+          items: [],
+        },
+      ],
+    },
+    {
+      title: "Nav Bars",
+      items: [
+        {
+          title: "Dynamic Island Nav",
+          href: `/docs/components/dynamic-island-nav`,
           items: [],
           label: "New",
         },
