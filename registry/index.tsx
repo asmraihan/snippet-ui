@@ -107,7 +107,7 @@ const snippet: Registry = {
     name: "scroll-progress-bar",
     type: "components:ui",
     files: ["registry/components/snippet/scroll-progress-bar.tsx"],
-  }, 
+  },
 
   //? Nav Bar
 
@@ -135,6 +135,7 @@ const snippet: Registry = {
 const demo: Registry = {
 
   //? Buttons
+
   "shiny-button-demo": {
     name: "shiny-button-demo",
     type: "components:demo",
@@ -157,6 +158,14 @@ const demo: Registry = {
     files: ["registry/components/demo/expand-button-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/expand-button-demo"),
+    ),
+  },
+  "ripple-button-demo": {
+    name: "ripple-button-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/ripple-button-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/ripple-button-demo"),
     ),
   },
 

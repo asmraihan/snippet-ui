@@ -25,7 +25,7 @@ export default function BuildBy() {
                 <div className="flex items-center justify-center gap-6">
                     <Avatar>
                         <AvatarImage src="https://avatars.githubusercontent.com/u/121637612?v=4" />
-                        <AvatarFallback>VC</AvatarFallback>
+                        <AvatarFallback>AR</AvatarFallback>
                     </Avatar>
                     <div className="space-y-1">
                         <h4 className="text-sm font-semibold">Built by Asm Raihan</h4>

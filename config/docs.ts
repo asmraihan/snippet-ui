@@ -149,6 +149,12 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/expand-button`,
           items: [],
         },
+        {
+          title: "Ripple Button",
+          href: `/docs/components/ripple-button`,
+          items: [],
+          label: "New",
+        },
       ],
     },
     {
