@@ -185,7 +185,7 @@ export const docsConfig: DocsConfig = {
           title: "Circle Text",
           href: `/docs/components/circle-text`,
           items: [],
-          label: "",
+          label: "New",
         },
      
       ],
