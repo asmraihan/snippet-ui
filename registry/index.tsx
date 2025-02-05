@@ -19,6 +19,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/expand-button.tsx"],
   },
+  "ripple-button": {
+    name: "ripple-button",
+    type: "components:ui",
+    files: ["registry/components/snippet/ripple-button.tsx"],
+  },
 
   //? Inputs
   "input-focus-animation": {
@@ -122,6 +127,11 @@ const snippet: Registry = {
     name: "fade-text",
     type: "components:ui",
     files: ["registry/components/snippet/fade-text.tsx"],
+  },
+  "circle-text": {
+    name: "circle-text",
+    type: "components:ui",
+    files: ["registry/components/snippet/circle-text.tsx"],
   },
 
   //? Slider
@@ -328,6 +338,16 @@ const demo: Registry = {
       () => import("@/registry/components/demo/fade-text-demo"),
     ),
   },
+  "circle-text-demo": {
+    name: "circle-text-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/circle-text-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/circle-text-demo"),
+    ),
+  },
+
+   
 
   //? Slider
   "animated-slider-demo": {
