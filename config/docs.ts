@@ -118,6 +118,12 @@ export const docsConfig: DocsConfig = {
           href: `/docs/components/scroll-progress-bar`,
           items: [],
         },
+        {
+          title: "Folding Icon",
+          href: `/docs/components/folding-icon`,
+          items: [],
+          label: "New",
+        },
       ],
     },
     {

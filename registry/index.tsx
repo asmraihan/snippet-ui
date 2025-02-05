@@ -113,6 +113,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/scroll-progress-bar.tsx"],
   },
+  "folding-icon": {
+    name: "folding-icon",
+    type: "components:ui",
+    files: ["registry/components/snippet/folding-icon.tsx"],
+  },
 
   //? Nav Bar
 
@@ -316,6 +321,14 @@ const demo: Registry = {
     files: ["registry/components/demo/scroll-progress-bar-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/scroll-progress-bar-demo"),
+    ),
+  },
+  "folding-icon-demo": {
+    name: "folding-icon-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/folding-icon-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/folding-icon-demo"),
     ),
   },
 
