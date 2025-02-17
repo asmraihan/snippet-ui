@@ -138,6 +138,11 @@ const snippet: Registry = {
     type: "components:ui",
     files: ["registry/components/snippet/circle-text.tsx"],
   },
+  "flip-words": {
+    name: "flip-words",
+    type: "components:ui",
+    files: ["registry/components/snippet/flip-words.tsx"],
+  },
 
   //? Slider
   "animated-slider": {
@@ -357,6 +362,14 @@ const demo: Registry = {
     files: ["registry/components/demo/circle-text-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/demo/circle-text-demo"),
+    ),
+  },
+  "flip-words-demo": {
+    name: "flip-words-demo",
+    type: "components:demo",
+    files: ["registry/components/demo/flip-words-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/demo/flip-words-demo"),
     ),
   },
 

@@ -193,6 +193,12 @@ export const docsConfig: DocsConfig = {
           items: [],
           label: "New",
         },
+        {
+          title: "Flip Words",
+          href: `/docs/components/flip-words`,
+          items: [],
+          label: "New",
+        },
      
       ],
     },
